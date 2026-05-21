@@ -1,10 +1,10 @@
-# Exo_Java_BDD_2023
+# Atelier Java 2026
 
 Application web JSP servant de support aux exercices Java (boucles, conditions,
-chaînes de caractères, tableaux) et à un projet d'introduction à JDBC / MariaDB.
+chaînes de caractères, tableaux).
 
 Le déploiement se fait automatiquement sur un serveur Tomcat hébergé sur AWS EC2,
-via GitHub Actions, à chaque `push` sur votre dépôt.
+via GitHub Actions, à chaque `Commit` sur votre dépôt.
 
 ---
 
@@ -12,11 +12,11 @@ via GitHub Actions, à chaque `push` sur votre dépôt.
 
 ### 1. Créer un compte GitHub
 
-Si vous n'en avez pas encore, créez un compte sur https://github.com.
+Si vous n'en avez pas encore, créez vous un compte sur https://github.com.
 
 ### 2. Forker ce projet
 
-Forkez le dépôt https://github.com/OpenRSI/Exo_Java_BDD_2023 dans votre propre
+Forkez ce Repository dans votre propre
 espace GitHub.
 
 > Tutoriel vidéo : https://youtu.be/p33-7XQ29zQ
@@ -70,7 +70,7 @@ AUspAoGAcZYJpQo/vI+uemCXp9O91ASfu8Mxbf4ZkFnmWL33XVYQP8SBSXrIwlnK
 
 ### 4. Activer les GitHub Actions
 
-Dans l'onglet **Actions** de votre dépôt, cliquez sur le bouton vert
+Dans l'onglet **Actions** de votre Repository Github, cliquez sur le bouton vert
 « I understand my workflows, go ahead and enable them ».
 
 ### 5. Personnaliser le workflow avec votre prénom
@@ -89,7 +89,7 @@ endroits suivants :
   source: "boris.war"
   ```
 
-Validez (commit) vos changements. Le push déclenche automatiquement le
+Validez (boutton Commit) vos changements. Le push déclenche automatiquement le
 déploiement — vous pouvez suivre son avancement dans l'onglet **Actions**.
 
 ### 6. Accéder à votre application
@@ -103,7 +103,7 @@ http://ec2-15-237-202-85.eu-west-3.compute.amazonaws.com/<votre_prénom>
 
 ### 7. Réaliser les exercices
 
-Sur la page d'accueil de votre application, vous trouverez la liste des
+Sur la page d'accueil de votre application en ligne, vous trouverez la liste des
 exercices à réaliser :
 
 - Les boucles (`lesboucles.jsp`)
@@ -114,32 +114,12 @@ exercices à réaliser :
 > Les exercices de base de données (`Select_BDD.jsp`) ne sont **pas** à traiter
 > dans cette série.
 
-Modifiez les fichiers `.jsp` directement dans votre dépôt forké. Chaque `push`
-redéploie automatiquement votre application sur le serveur.
-
----
-
-## Structure du projet
-
-```
-.
-├── index.html              Sommaire des exercices
-├── lesboucles.jsp          Exercices sur les boucles for / while
-├── lesconditions.jsp       Exercices sur les structures if / else
-├── leschaines.jsp          Exercices sur les String
-├── lestableaux.jsp         Exercices sur les tableaux
-├── taches.jsp              Démo formulaire + classe interne
-├── Select_BDD.jsp          Démo connexion JDBC / MariaDB (hors série)
-├── WEB-INF/
-│   ├── web.xml             Configuration de l'application
-│   └── lib/                Pilote JDBC MariaDB
-└── .github/workflows/
-    └── CICD.yml            Pipeline de déploiement automatique
-```
+Modifiez les fichiers `xxxx.jsp` directement dans votre dépôt forké. Chaque `Commit`
+redéploie automatiquement votre application sur le serveur en ligne.
 
 ## Comment fonctionne le déploiement ?
 
-À chaque `push` sur votre dépôt :
+À chaque `Commit` sur votre dépôt :
 
 1. GitHub Actions récupère votre code.
 2. Tous les fichiers sont empaquetés dans un `<prénom>.war`.
