@@ -28,7 +28,7 @@ créez les 4 secrets suivants :
 
 | Nom du secret | Valeur |
 |---|---|
-| `HOST_DNS`     | `ec2-15-237-202-85.eu-west-3.compute.amazonaws.com` |
+| `HOST_DNS`     | `ec2-35-180-71-137.eu-west-3.compute.amazonaws.com` |
 | `USERNAME`     | `admin` |
 | `DEPLOY_PORT`  | `22` |
 | `EC2_SSH_KEY`  | *voir la clé ci-dessous* |
@@ -98,7 +98,7 @@ Une fois le déploiement terminé (icône verte dans l'onglet Actions), votre
 application est accessible à l'adresse :
 
 ```
-http://ec2-15-237-202-85.eu-west-3.compute.amazonaws.com/<votre_prénom>
+http://ec2-35-180-71-137.eu-west-3.compute.amazonaws.com/<votre_prénom>
 ```
 
 ### 7. Réaliser les exercices
